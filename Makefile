@@ -28,3 +28,8 @@ run-day2a: day2a.out input/2.txt
 
 run-day2b: day2b.out input/2.txt
 	./day2b.out < input/2.txt
+
+# Day 3: Prolog
+
+run-day3a: day3a.pro input/3.txt
+	swipl day3a.pro < input/3.txt
