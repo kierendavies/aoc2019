@@ -41,3 +41,6 @@ run-day3b: day3b.pro input/3.txt
 
 run-day4a: day4a.js input/4.txt
 	node day4a.js < input/4.txt
+
+run-day4b: day4b.js input/4.txt
+	node day4b.js < input/4.txt
