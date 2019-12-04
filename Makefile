@@ -36,3 +36,8 @@ run-day3a: day3a.pro input/3.txt
 
 run-day3b: day3b.pro input/3.txt
 	swipl --stack_limit=4G day3b.pro < input/3.txt
+
+# Day 4: JavaScript
+
+run-day4a: day4a.js input/4.txt
+	node day4a.js < input/4.txt
