@@ -44,3 +44,11 @@ run-day4a: day4a.js input/4.txt
 
 run-day4b: day4b.js input/4.txt
 	node day4b.js < input/4.txt
+
+# Day 5: C++ (continuation of day 2)
+
+day5%.out: day5%.cpp
+	g++ -o $@ $<
+
+run-day5a: day5a.out input/5.txt
+	./day5a.out < input/5.txt
