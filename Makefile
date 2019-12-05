@@ -52,3 +52,6 @@ day5%.out: day5%.cpp
 
 run-day5a: day5a.out input/5.txt
 	./day5a.out < input/5.txt
+
+run-day5b: day5b.out input/5.txt
+	./day5b.out < input/5.txt
