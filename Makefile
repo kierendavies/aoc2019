@@ -60,3 +60,6 @@ run-day5b: day5b.out input/5.txt
 
 run-day6a: day6a.py input/6.txt
 	python day6a.py < input/6.txt
+
+run-day6b: day6b.py input/6.txt
+	python day6b.py < input/6.txt
