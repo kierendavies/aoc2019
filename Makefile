@@ -55,3 +55,8 @@ run-day5a: day5a.out input/5.txt
 
 run-day5b: day5b.out input/5.txt
 	./day5b.out < input/5.txt
+
+# Day 6: Free choice: Python
+
+run-day6a: day6a.py input/6.txt
+	python day6a.py < input/6.txt
