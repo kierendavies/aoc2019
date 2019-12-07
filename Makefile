@@ -63,3 +63,11 @@ run-day6a: day6a.py input/6.txt
 
 run-day6b: day6b.py input/6.txt
 	python day6b.py < input/6.txt
+
+# Day 7: C++ (continuation of day 2)
+
+day7%.out: day7%.cpp
+	g++ -o $@ $<
+
+run-day7a: day7a.out input/7.txt
+	./day7a.out < input/7.txt
