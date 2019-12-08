@@ -71,3 +71,6 @@ day7%.out: day7%.cpp
 
 run-day7a: day7a.out input/7.txt
 	./day7a.out < input/7.txt
+
+run-day7b: day7b.out input/7.txt
+	./day7b.out < input/7.txt
