@@ -85,3 +85,6 @@ day9%.out: day9%.cpp
 
 run-day9a: day9a.out input/9.txt
 	./day9a.out < input/9.txt
+
+run-day9b: day9b.out input/9.txt
+	./day9b.out < input/9.txt
