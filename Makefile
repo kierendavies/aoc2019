@@ -77,3 +77,11 @@ run-day7b: day7b.out input/7.txt
 
 # Day 8: Spreadsheet: LibreOffice
 # I have no idea how to automate this.
+
+# Day 7: C++ (continuation of day 2)
+
+day9%.out: day9%.cpp
+	g++ -o $@ $<
+
+run-day9a: day9a.out input/9.txt
+	./day9a.out < input/9.txt
