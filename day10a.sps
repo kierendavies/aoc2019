@@ -1,0 +1,45 @@
+#!r6rs
+(import (rnrs))
+
+(define (read-grid)
+  (let read-grid-acc ((points '())
+                      (x 0)
+                      (y 0))
+    (let ((c (read-char)))
+      (cond ((eq? c #\#) (read-grid-acc (cons (list x y) points) (+ x 1) y))
+            ((eq? c #\.) (read-grid-acc points (+ x 1) y))
+            ((eq? c #\newline) (read-grid-acc points 0 (+ y 1)))
+            ((eof-object? c) points)))))
+
+(define (gcd x y)
+  (if (zero? y)
+      x
+      (gcd y (mod x y))))
+
+(define (direction p q)
+  (let* ((x (- (car q) (car p)))
+         (y (- (cadr q) (cadr p)))
+         (d (abs (gcd x y))))
+    (if (zero? d)
+        '(0 0)
+        (list (/ x d) (/ y d)))))
+
+(define (count-distinct xs)
+  (let count-distinct-acc ((c 0)
+                           (seen '())
+                           (xs xs))
+    (cond ((null? xs) c)
+          ((member (car xs) seen) (count-distinct-acc c seen (cdr xs)))
+          (else (count-distinct-acc (+ c 1) (cons (car xs) seen) (cdr xs))))))
+
+(define (count-visible p points)
+  (let* ((dirs (map (lambda (q) (direction p q))
+                    points)))
+    (- (count-distinct dirs) 1)))
+
+(let* ((points (reverse (read-grid)))
+       (vis (map (lambda (p) (count-visible p points))
+                 points))
+       (max-vis (fold-left max 0 vis)))
+  (display max-vis)
+  (display "\n"))
