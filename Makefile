@@ -93,3 +93,6 @@ run-day9b: day9b.out input/9.txt
 
 run-day10a: day10a.sps input/10.txt
 	plt-r6rs day10a.sps < input/10.txt
+
+run-day10b: day10b.sps input/10.txt
+	plt-r6rs day10b.sps < input/10.txt
