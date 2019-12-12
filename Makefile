@@ -107,3 +107,8 @@ run-day11a: day11a.out input/11.txt
 
 run-day11b: day11b.out input/11.txt
 	./day11b.out < input/11.txt
+
+# Day 12: Smalltalk
+
+run-day12a: day12a.st input/12.txt
+	gst day12a.st < input/12.txt
