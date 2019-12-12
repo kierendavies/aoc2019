@@ -97,7 +97,7 @@ run-day10a: day10a.sps input/10.txt
 run-day10b: day10b.sps input/10.txt
 	plt-r6rs day10b.sps < input/10.txt
 
-# Day 9: C++ (continuation of day 2)
+# Day 11: C++ (continuation of day 2)
 
 day11%.out: day11%.cpp
 	g++ -o $@ $<
