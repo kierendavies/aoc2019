@@ -131,3 +131,6 @@ run-day13b: day13b.out input/13.txt
 
 run-day14a: day14a.pl input/14.txt
 	perl day14a.pl < input/14.txt
+
+run-day14b: day14b.pl input/14.txt
+	perl day14b.pl < input/14.txt
