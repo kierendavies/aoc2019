@@ -115,3 +115,14 @@ run-day12a: day12a.st input/12.txt
 
 run-day12b: day12b.st input/12.txt
 	gst day12b.st < input/12.txt
+
+# Day 13: C++ (continuation of day 2)
+
+day13%.out: day13%.cpp
+	g++ -o $@ $<
+
+run-day13a: day13a.out input/13.txt
+	./day13a.out < input/13.txt
+
+run-day13b: day13b.out input/13.txt
+	./day13b.out < input/13.txt
