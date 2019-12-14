@@ -112,3 +112,6 @@ run-day11b: day11b.out input/11.txt
 
 run-day12a: day12a.st input/12.txt
 	gst day12a.st < input/12.txt
+
+run-day12b: day12b.st input/12.txt
+	gst day12b.st < input/12.txt
