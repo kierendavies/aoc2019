@@ -145,3 +145,8 @@ run-day15a: day15a.out input/15.txt
 
 run-day15b: day15b.out input/15.txt
 	./day15b.out < input/15.txt
+
+# Day 16: Clojure
+
+run-day16a: day16a.clj input/16.txt
+	clojure day16a.clj < input/16.txt
