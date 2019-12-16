@@ -134,3 +134,14 @@ run-day14a: day14a.pl input/14.txt
 
 run-day14b: day14b.pl input/14.txt
 	perl day14b.pl < input/14.txt
+
+# Day 15: C++ (continuation of day 2)
+
+day15%.out: day15%.cpp
+	g++ -o $@ $<
+
+run-day15a: day15a.out input/15.txt
+	./day15a.out < input/15.txt
+
+run-day15b: day15b.out input/15.txt
+	./day15b.out < input/15.txt
