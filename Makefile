@@ -150,3 +150,17 @@ run-day15b: day15b.out input/15.txt
 
 run-day16a: day16a.clj input/16.txt
 	clojure day16a.clj < input/16.txt
+
+run-day16b: day16b.clj input/16.txt
+	clojure day16b.clj < input/16.txt
+
+# Day 17: C++ (continuation of day 2)
+
+day17%.out: day17%.cpp
+	g++ -o $@ $<
+
+run-day17a: day17a.out input/17.txt
+	./day17a.out < input/17.txt
+
+run-day17b: day17b.out input/17.txt
+	./day17b.out < input/17.txt
