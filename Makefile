@@ -172,3 +172,14 @@ run-day18a: day18a.rb input/18.txt
 
 run-day18b: day18b.rb input/18.txt
 	ruby day18b.rb < input/18.txt
+
+# Day 19: C++ (continuation of day 2)
+
+day19%.out: day19%.cpp
+	g++ -o $@ $<
+
+run-day19a: day19a.out input/19.txt
+	./day19a.out < input/19.txt
+
+run-day19b: day19b.out input/19.txt
+	./day19b.out < input/19.txt
