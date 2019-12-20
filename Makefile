@@ -183,3 +183,8 @@ run-day19a: day19a.out input/19.txt
 
 run-day19b: day19b.out input/19.txt
 	./day19b.out < input/19.txt
+
+# Day 20: Python
+
+run-day20a: day20a.py input/20.txt
+	python day20a.py < input/20.txt
