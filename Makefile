@@ -164,3 +164,11 @@ run-day17a: day17a.out input/17.txt
 
 run-day17b: day17b.out input/17.txt
 	./day17b.out < input/17.txt
+
+# Day 18: Ruby
+
+run-day18a: day18a.rb input/18.txt
+	ruby day18a.rb < input/18.txt
+
+run-day18b: day18b.rb input/18.txt
+	ruby day18b.rb < input/18.txt
