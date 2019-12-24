@@ -193,3 +193,6 @@ run-day20a: day20a.py input/20.txt
 
 run-day24a: day24a.go input/24.txt
 	go run day24a.go < input/24.txt
+
+run-day24b: day24b.go input/24.txt
+	go run day24b.go < input/24.txt
